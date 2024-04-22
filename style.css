@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f8;
+  font-family: "Zilla Slab", serif;
+}
+
+img {
+  height: 30vh;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: tomato;
+}
+
+h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  text-align: center;
+  color: #ee895b;
+}
+
+
+.menu {
+  margin-top: 20px;
+}
+.title{
+  margin-top: 20px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.btn-item {
+  margin-left: 15px;
+}
+
+/* btn-container icindeki butonlar hover oldugunda yazi rengi degissin ve butonlar buyusun: */
+.btn-container button:hover {
+  color: white;
+  background-color: tomato;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in;
+}
+
+.photo {
+  width: 30%;
+  height: 175px;
+  object-fit: cover;
+  /* border'larini degistirdim */
+  border: 0.1rem solid rgba(255,255,255, 0.5);
+  border-radius: 15px;
+}
+
+
+
+
+.menu-items {
+  display: flex;
+  margin: 20px 0;
+}
+.menu-info {
+  margin-left: 20px;
+  width: 100%;
+}
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black ;
+}
+
+h4 {
+  color: black;
+}
+
+
+/* HOVER STYLE EKLENDI */
+/* menu'deki resimlerin uzerine gelince 0.15 sn icinde 1.1 oraninda buyusun & buradaki h4'lerin normal rengi siyah olsun ama uzerine gelince tomato olsun */
+.menu-items:hover img,  .menu-items:hover h4 {
+  transform: scale(1.1);
+  transition: all 0.15s ease-in;
+  color: tomato;
+
+}
+/* menu-item uzerine gelince box-shadow */
+.menu-items:hover img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.70);
+}
+
+
+
+.menu-text {
+  padding-top: 20px;
+}
+
+
